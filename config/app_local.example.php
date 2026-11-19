@@ -96,4 +96,22 @@ return [
             'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
         ],
     ],
+
+    /*
+     * Social login (OAuth 2.0). A provider only shows up on the login screen
+     * when both clientId and clientSecret are set.
+     * Callback URLs to register at the provider:
+     *   {APP_FULL_BASE_URL}/auth/google/callback
+     *   {APP_FULL_BASE_URL}/auth/github/callback
+     */
+    'SocialLogin' => [
+        'google' => [
+            'clientId' => env('GOOGLE_CLIENT_ID', null),
+            'clientSecret' => env('GOOGLE_CLIENT_SECRET', null),
+        ],
+        'github' => [
+            'clientId' => env('GITHUB_CLIENT_ID', null),
+            'clientSecret' => env('GITHUB_CLIENT_SECRET', null),
+        ],
+    ],
 ];

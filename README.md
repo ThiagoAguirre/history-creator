@@ -29,10 +29,20 @@ You can now either use your machine's webserver to view the default home page, o
 up the built-in webserver with:
 
 ```bash
-bin/cake server -p 8765
+bin/cake server -p 8766
 ```
 
-Then visit `http://localhost:8765` to see the welcome page.
+Then visit `http://localhost:8766` to see the welcome page.
+
+### CSS do Tailwind
+
+O CSS compilado é servido localmente em `webroot/css/tailwind.css`. Para
+regenerá-lo após alterar as classes das views, execute:
+
+```bash
+npm install
+npm run css:build
+```
 
 ## Demo app
 

@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "css:build": "tailwindcss -i resources/css/tailwind.css -o webroot/css/tailwind.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "tailwindcss": "^4.3.5"
+  }
+}
